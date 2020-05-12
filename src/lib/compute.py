@@ -7,13 +7,17 @@ class Compute:
         pass
 
     def subtract(self):
-        pass
+        difference = 0
 
-    def divide(self):
-        pass
+    for item in self.operands:
+        difference -= item
+    print(difference)
 
     def multiply(self):
-        sum = 1
-        for item in self.operands:
-            sum = item
-        print(sum)
+        if self.operands is None:
+            return
+
+    product = 1
+    for item in self.operands:
+        product *= item
+    print(product)
