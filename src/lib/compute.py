@@ -9,8 +9,11 @@ class Compute:
     def subtract(self):
         pass
 
-    def multiply(self):
-        pass
-
     def divide(self):
         pass
+
+    def multiply(self):
+        sum = 1
+        for item in self.operands:
+            sum = item
+        print(sum)
